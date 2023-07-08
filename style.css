@@ -1,0 +1,111 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: silver;
+}
+
+#Display {
+    background: linear-gradient(110deg, #f6fce3 50%, #a9c96e 60%);
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    padding: 30px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 1.5rem 1rem rgba(32, 125, 231, 0.2);
+}
+
+#Container {
+    background: linear-gradient(110deg, #3b89fd 50%, #5046e2 60%);
+    width: 35rem;
+    border-radius: 2rem;
+    margin-left: 18%;
+    padding: 3rem ;
+    background-color: #7d8ba3;
+    margin-top: 10%;
+    box-shadow: 0 8px 15px rgba(62, 71, 197, 0.2);
+    position: absolute;
+    left: 12%;
+}
+
+.buttons{
+    margin: 4rem auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.timerBtn{
+   margin-top: 7rem;
+   height: 4rem;
+   width: 9rem;
+   font-weight: bold;
+   font-size: 25px;
+   border-radius: 4rem;
+   box-shadow: 0px 0px 10px 2px rgb(55, 53, 73);
+   transition: background-color 0.8s ;
+   cursor: pointer;
+   box-shadow: 0 8px 9px #999;
+}
+
+.timerBtn:hover{
+    background-color: rgb(72, 85, 207);
+    font-size: 30px;
+    color: white;
+}
+
+#startBtn:hover{
+    background-color: rgb(207, 54, 34);
+    font-size: 30px;
+    color: white;
+}
+
+/* Media queries for different screen sizes */
+
+@media only screen and (max-width: 1200px) {
+    /* CSS adjustments for screens up to 1200px */
+    #Container {
+      width: 30rem;
+      margin-left: 15%;
+      padding: 2rem;
+      margin-top: 8%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    /* CSS adjustments for screens up to 992px */
+    #Container {
+      width: 25rem;
+      margin-left: 12%;
+      padding: 1.5rem;
+      margin-top: 6%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* CSS adjustments for screens up to 768px */
+    #Container {
+      width: 20rem;
+      margin-left: 10%;
+      padding: 1rem;
+      margin-top: 4%;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    /* CSS adjustments for screens up to 576px */
+    #Container {
+      width: 18rem;
+      margin-left: 5%;
+      padding: 0.5rem;
+      margin-top: 2%;
+    }
+  }
